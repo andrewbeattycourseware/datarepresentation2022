@@ -22,7 +22,7 @@ urlOfFile = fileInfo.download_url
 response = requests.get(urlOfFile)
 contentOfFile = response.text
 #print (contentOfFile)
-newContents = contentOfFile + " more stuff \n"
+newContents = contentOfFile + " more stuff 2 \n"
 print (newContents)
 gitHubResponse=repo.update_file(fileInfo.path,"updated by prog",newContents,fileInfo.sha)
 print (gitHubResponse)
