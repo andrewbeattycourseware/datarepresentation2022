@@ -11,7 +11,7 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 sql="delete from student where id = %s"
-values = (1,)
+values = (2,)
 
 cursor.execute(sql, values)
 

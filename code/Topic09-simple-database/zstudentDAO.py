@@ -20,10 +20,10 @@ class StudentDAO:
     
     def getCursor(self): 
         self.connection = mysql.connector.connect(
-        host=self.host,
-        user=self.user,
-        password=self.password,
-        database=self.database
+            host=self.host,
+            user=self.user,
+            password=self.password,
+            database=self.database
         )
         self.cursor = self.connection.cursor()
         return self.cursor
