@@ -77,7 +77,7 @@ class BookDAO:
 
         cursor.execute(sql, values)
 
-        self.db.commit()
+        self.connection.commit()
         self.closeAll()
         
         print("delete done")
